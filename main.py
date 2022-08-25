@@ -1,3 +1,5 @@
+from time import sleep
+
 import requests
 import telegram
 from environs import Env
@@ -52,6 +54,6 @@ if __name__ == '__main__':
                 )
 
         except requests.exceptions.ReadTimeout:
-            print('Новых сообщений нет.')
+            
         except requests.exceptions.ConnectionError:
-            print('Нет соединения с интернетом.')
+            sleep(900)
