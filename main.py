@@ -54,6 +54,6 @@ if __name__ == '__main__':
                 )
 
         except requests.exceptions.ReadTimeout:
-            
+            continue
         except requests.exceptions.ConnectionError:
             sleep(900)
