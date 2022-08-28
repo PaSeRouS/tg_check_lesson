@@ -1,3 +1,4 @@
+import logging
 from time import sleep
 
 import requests
@@ -52,6 +53,8 @@ if __name__ == '__main__':
                     chat_id=chat_id,
                     text=message
                 )
+
+            logging.warning('Предупреждение, что-то могло сломаться')
 
         except requests.exceptions.ReadTimeout:
             continue
