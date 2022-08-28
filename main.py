@@ -89,3 +89,5 @@ if __name__ == '__main__':
 
             log.warning(log_message)
             sleep(900)
+        except Exception:
+            log.exception('Ошибка!')
