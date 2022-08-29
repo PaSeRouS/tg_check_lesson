@@ -63,7 +63,7 @@ if __name__ == '__main__':
                 log.debug('Новых проверок нет.')
                 params = {'timestamp': review_data['timestamp_to_request']}
             elif review_data['status'] == 'found':
-                log.debug('сть новая проверка.')
+                log.debug('Есть новая проверка.')
                 params = {'timestamp': review_data['last_attempt_timestamp']}
 
                 for attempt in review_data['new_attempts']:
