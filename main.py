@@ -48,7 +48,6 @@ if __name__ == '__main__':
 
     params = {}
 
-    log.info('Бот сейчас запущен.')
     while True:
         try:
             response = requests.get(
